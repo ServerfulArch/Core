@@ -1,0 +1,17 @@
+{
+  "name": "@serverful/core",
+  "version": "0.0.0",
+  "description": "The core Serverful library",
+  "main": "Core.js",
+  "scripts": {},
+  "keywords": [],
+  "homepage": "https://github.com/ServerfulArch/Core#readme",
+  "repository": "github:ServerfulArch/Core",
+  "author": "QSmally",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ServerfulArch/Core/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
