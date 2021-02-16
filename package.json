@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "The core Serverful library",
   "main": "Core.js",
-  "type": "module",
   "scripts": {},
   "keywords": [],
   "homepage": "https://github.com/ServerfulArch/Core#readme",
