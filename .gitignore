@@ -1,0 +1,12 @@
+
+# Dependencies
+node_modules/
+
+# Miscellaneous
+.DS_Store
+*.zip
+.env
+
+# Development
+Deploy/
+Test/
