@@ -15,5 +15,8 @@
   "dependencies": {
     "qulity": "^2.1.0"
   },
+  "optionalDependencies": {
+    "ejs": "^3.1.6"
+  },
   "devDependencies": {}
 }
