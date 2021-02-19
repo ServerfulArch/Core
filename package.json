@@ -1,9 +1,12 @@
 {
   "name": "@serverful/core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The core Serverful library",
   "main": "Core.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node Test/Test.js",
+    "docs": "gendocs Test/DocConf.json"
+  },
   "keywords": [],
   "homepage": "https://github.com/ServerfulArch/Core#readme",
   "repository": "github:ServerfulArch/Core",
@@ -18,5 +21,7 @@
   "optionalDependencies": {
     "ejs": "^3.1.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "docgen": "github:QSmally/Docgen"
+  }
 }
