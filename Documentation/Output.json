@@ -1,0 +1,231 @@
+{
+    "Server": [
+        {
+            "Value": "Port",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 23,
+            "Description": "Server's port configuration.",
+            "Type": "{Number}"
+        },
+        {
+            "Value": "Gateways",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 34,
+            "Description": "A structure defining all gateway listeners.",
+            "Type": "{EventEmitter}"
+        },
+        {
+            "Value": "Connection",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 44,
+            "Description": "Server's REST connection.",
+            "Type": "{HTTP}"
+        },
+        {
+            "Value": "Connect",
+            "Flags": [
+                "Private"
+            ],
+            "Line": 60,
+            "Description": "Publishes a new server addressed by the port of this Server.",
+            "Returns": "{Server}"
+        },
+        {
+            "Value": "Incoming",
+            "Flags": [],
+            "Line": 75,
+            "Description": "Registers a new function which will get executed by each request.",
+            "Params": [
+                "{Function} Handler A function which'll get executed by each request."
+            ],
+            "Returns": "{Server}"
+        },
+        {
+            "Value": "Gateway",
+            "Flags": [],
+            "Line": 89,
+            "Description": "Registers predefined routes based on the first argument in the URI.",
+            "Params": [
+                "{Object|String} PrefixOrList Either a new gateway key or an object with key/values.",
+                "{Function} Handler A function which'll get executed by each of this gateway request."
+            ],
+            "Returns": "{Server}"
+        }
+    ],
+    "Packet": [
+        {
+            "Value": "_Request",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 16,
+            "Description": "Native HTTP request instance.",
+            "Type": "{Request}"
+        },
+        {
+            "Value": "_Response",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 26,
+            "Description": "Native HTTP response instance.",
+            "Type": "{Response}"
+        },
+        {
+            "Value": "Method",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 39,
+            "Description": "Method used for this request.",
+            "Type": "{String}"
+        },
+        {
+            "Value": "Headers",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 50,
+            "Description": "Headers used for this request.",
+            "Type": "{Object}"
+        },
+        {
+            "Value": "Request",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 61,
+            "Description": "Packet's request manager instance.",
+            "Type": "{RequestManager}"
+        },
+        {
+            "Value": "URL",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 72,
+            "Description": "Parsed and formatted URL of this request.",
+            "Type": "{Object}"
+        },
+        {
+            "Value": "_Body",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 86,
+            "Description": "Parsed body cache.",
+            "Type": "{Object|Array}"
+        }
+    ],
+    "Request": [
+        {
+            "Value": "_Response",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 12,
+            "Description": "Native HTTP response instance.",
+            "Type": "{Response}"
+        },
+        {
+            "Value": "Cookies",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 22,
+            "Description": "A collection of all outgoing cookies.",
+            "Type": "{DataStore}"
+        },
+        {
+            "Value": "Write",
+            "Flags": [],
+            "Line": 38,
+            "Description": "Outputs a body to the client and writes its state.",
+            "Params": [
+                "{String} Body Body to send to the client."
+            ],
+            "Returns": "{RequestManager}"
+        },
+        {
+            "Value": "JSON",
+            "Flags": [],
+            "Line": 55,
+            "Description": "Outputs a valid JSON object and writes its state.",
+            "Params": [
+                "{Object|Array} Document A document to send to the client."
+            ],
+            "Returns": "{RequestManager}"
+        },
+        {
+            "Value": "Render",
+            "Flags": [
+                "Async"
+            ],
+            "Line": 65,
+            "Description": "Creates a render from an EJS template and writes it to the client.",
+            "Params": [
+                "{String} Resource An EJS string to render.",
+                "{Object} [Context] Information to apply as context to the renderer."
+            ],
+            "Returns": "{RequestManager}"
+        },
+        {
+            "Value": "Headers",
+            "Flags": [],
+            "Line": 85,
+            "Description": "Sets a (list of) header(s) of this Packet.",
+            "Params": [
+                "{Object|String} KeyOrList Either a header key or an object with key/values.",
+                "{*} Value The header value when the first argument was a string."
+            ],
+            "Returns": "{RequestManager}"
+        },
+        {
+            "Value": "ExportCookies",
+            "Flags": [],
+            "Line": 106,
+            "Description": "Sends the cookies of this request to the client.",
+            "Returns": "{RequestManager}"
+        },
+        {
+            "Value": "Redirect",
+            "Flags": [],
+            "Line": 126,
+            "Description": "Redirects the user to another URL and ends this request.",
+            "Params": [
+                "{String} Location A base URL or relative path to redirect to.",
+                "{Number} Status Alternate 300-based location status."
+            ],
+            "Returns": "{Response}"
+        },
+        {
+            "Value": "End",
+            "Flags": [],
+            "Line": 137,
+            "Description": "Marks this request as ended and sends it to the client.",
+            "Params": [
+                "{Number} Code A HTTP status code.",
+                "{String?} Message Optional message to send within the body."
+            ],
+            "Returns": "{Response}"
+        }
+    ]
+}
