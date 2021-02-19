@@ -1,0 +1,22 @@
+{
+    "Source": "lib/",
+    "Out":    "Documentation/",
+    "Index":  true,
+
+    "Additional": {
+        "Request": "The RequestManager is accessible through the Packet instance, using `Packet.Request`."
+    },
+
+    "Repository": "https://github.com/ServerfulArch/Core/blob/master/",
+
+    "Keys": ["lib/Server", "lib/Service/Packet", "lib/Managers/Request"],
+    "Typedefs": [],
+
+    "Overview": {
+        "Server": "Server",
+
+        "#1":      "Requests",
+        "Packet":  "Packet",
+        "Request": "Request"
+    }
+}
