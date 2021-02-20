@@ -15,22 +15,22 @@ MyServer.Incoming(Packet => { ... });
 
 
 # Values
-## [.Method](https://github.com/ServerfulArch/Core/blob/master/lib/Service/Packet.js#L39)
+## [.Method](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L39)
 > Method used for this request. [**Read Only**]
 >
 > Type **{String}**
 
-## [.Headers](https://github.com/ServerfulArch/Core/blob/master/lib/Service/Packet.js#L50)
+## [.Headers](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L50)
 > Headers used for this request. [**Read Only**]
 >
 > Type **{Object}**
 
-## [.Request](https://github.com/ServerfulArch/Core/blob/master/lib/Service/Packet.js#L61)
+## [.Request](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L61)
 > Packet's request manager instance. [**Read Only**]
 >
 > Type **{RequestManager}**
 
-## [.URL](https://github.com/ServerfulArch/Core/blob/master/lib/Service/Packet.js#L72)
+## [.URL](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L72)
 > Parsed and formatted URL of this request. [**Read Only**]
 >
 > Type **{Object}**

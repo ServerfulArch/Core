@@ -6,7 +6,7 @@
                 "Variable",
                 "ReadOnly"
             ],
-            "Line": 23,
+            "Line": 22,
             "Description": "Server's port configuration.",
             "Type": "{Number}"
         },
@@ -16,7 +16,7 @@
                 "Variable",
                 "Private"
             ],
-            "Line": 34,
+            "Line": 33,
             "Description": "A structure defining all gateway listeners.",
             "Type": "{EventEmitter}"
         },
@@ -26,7 +26,7 @@
                 "Variable",
                 "Private"
             ],
-            "Line": 44,
+            "Line": 43,
             "Description": "Server's REST connection.",
             "Type": "{HTTP}"
         },
@@ -35,14 +35,14 @@
             "Flags": [
                 "Private"
             ],
-            "Line": 60,
+            "Line": 59,
             "Description": "Publishes a new server addressed by the port of this Server.",
             "Returns": "{Server}"
         },
         {
             "Value": "Incoming",
             "Flags": [],
-            "Line": 75,
+            "Line": 74,
             "Description": "Registers a new function which will get executed by each request.",
             "Params": [
                 "{Function} Handler A function which'll get executed by each request."
@@ -52,7 +52,7 @@
         {
             "Value": "Gateway",
             "Flags": [],
-            "Line": 89,
+            "Line": 88,
             "Description": "Registers predefined routes based on the first argument in the URI.",
             "Params": [
                 "{Object|String} PrefixOrList Either a new gateway key or an object with key/values.",

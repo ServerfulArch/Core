@@ -19,13 +19,13 @@ const MyServer = new Serverful(80);
 
 
 # Values
-## [.Port](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L23)
+## [.Port](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L22)
 > Server's port configuration. [**Read Only**]
 >
 > Type **{Number}**
 
 # Methods
-## [.Incoming(Handler)](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L75)
+## [.Incoming(Handler)](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L74)
 > Registers a new function which will get executed by each request.
 > | Key | Type | Description |
 > | --- | --- | --- |
@@ -33,7 +33,7 @@ const MyServer = new Serverful(80);
 >
 > Returns **{Server}** 
 
-## [.Gateway(PrefixOrList, Handler)](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L89)
+## [.Gateway(PrefixOrList, Handler)](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L88)
 > Registers predefined routes based on the first argument in the URI.
 > | Key | Type | Description |
 > | --- | --- | --- |
