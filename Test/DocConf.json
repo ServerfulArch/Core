@@ -9,7 +9,7 @@
 
     "Repository": "https://github.com/ServerfulArch/Core/blob/master/",
 
-    "Keys": ["lib/Server", "lib/Service/Packet", "lib/Managers/Request"],
+    "Keys": ["lib/Server", "lib/Structures/Packet", "lib/Managers/Request"],
     "Typedefs": [],
 
     "Overview": {
