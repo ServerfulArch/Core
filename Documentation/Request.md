@@ -50,12 +50,7 @@ The RequestManager is accessible through the Packet instance, using `Packet.Requ
 >
 > Returns **{RequestManager}** 
 
-## [ExportCookies](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L106)
-> Sends the cookies of this request to the client.
->
-> Returns **{RequestManager}** 
-
-## [Redirect](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L126)
+## [Redirect](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L127)
 > Redirects the user to another URL and ends this request.
 > | Key | Type | Description |
 > | --- | --- | --- |
@@ -64,7 +59,7 @@ The RequestManager is accessible through the Packet instance, using `Packet.Requ
 >
 > Returns **{Response}** 
 
-## [End](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L137)
+## [End](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L138)
 > Marks this request as ended and sends it to the client.
 > | Key | Type | Description |
 > | --- | --- | --- |

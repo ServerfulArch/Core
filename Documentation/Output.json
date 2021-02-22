@@ -131,6 +131,13 @@
             "Line": 86,
             "Description": "Parsed body cache.",
             "Type": "{Object|Array}"
+        },
+        {
+            "Value": "Body",
+            "Flags": [],
+            "Line": 100,
+            "Description": "Resolves and parses the request's body as JSON. Rejects the Promise if any error occurred, including parse errors.",
+            "Returns": "{Promise<Object|Array>}"
         }
     ],
     "Request": [
@@ -200,7 +207,9 @@
         },
         {
             "Value": "ExportCookies",
-            "Flags": [],
+            "Flags": [
+                "Private"
+            ],
             "Line": 106,
             "Description": "Sends the cookies of this request to the client.",
             "Returns": "{RequestManager}"
@@ -208,7 +217,7 @@
         {
             "Value": "Redirect",
             "Flags": [],
-            "Line": 126,
+            "Line": 127,
             "Description": "Redirects the user to another URL and ends this request.",
             "Params": [
                 "{String} Location A base URL or relative path to redirect to.",
@@ -219,7 +228,7 @@
         {
             "Value": "End",
             "Flags": [],
-            "Line": 137,
+            "Line": 138,
             "Description": "Marks this request as ended and sends it to the client.",
             "Params": [
                 "{Number} Code A HTTP status code.",

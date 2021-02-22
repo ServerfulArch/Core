@@ -34,3 +34,9 @@ MyServer.Incoming(Packet => { ... });
 > Parsed and formatted URL of this request. [**Read Only**]
 >
 > Type **{Object}**
+
+# Methods
+## [.Body()](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L100)
+> Resolves and parses the request's body as JSON. Rejects the Promise if any error occurred, including parse errors.
+>
+> Returns **{Promise<Object|Array>}** 
