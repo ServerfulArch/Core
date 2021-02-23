@@ -1,0 +1,3 @@
+
+GET http://localhost/
+Cookie: foo=bar; bar=foo
