@@ -133,11 +133,48 @@
             "Type": "{Object|Array}"
         },
         {
+            "Value": "_Cookies",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 97,
+            "Description": "Parsed cookie cache.",
+            "Type": "{Object}"
+        },
+        {
+            "Value": "Cookie",
+            "Flags": [],
+            "Line": 111,
+            "Description": "Manages the elements of cookies, which includes the creation, deletion and retrieval of the cookie items.",
+            "Params": [
+                "{String} [Key] If creating or erasing a cookie, an identifier that represents this cookie.",
+                "{String} [Value] If creating a cookie, a value for this cookie.",
+                "{CookieOptions} [Options] Additional options for the creation of the cookie."
+            ],
+            "Returns": "{Object|DataStore}"
+        },
+        {
             "Value": "Body",
             "Flags": [],
-            "Line": 100,
+            "Line": 145,
             "Description": "Resolves and parses the request's body as JSON. Rejects the Promise if any error occurred, including parse errors.",
             "Returns": "{Promise<Object|Array>}"
+        },
+        {
+            "Value": "",
+            "Flags": [
+                "Typedef"
+            ],
+            "Line": 171,
+            "Description": "Additional options for a response cookie. ",
+            "Typedef": "{Object} CookieOptions",
+            "Params": [
+                "{String} Domain A domain where this cookie can be accessed from. Defaults to the `DOMAIN` environment variable. ",
+                "{Number} Age A period in seconds to keep this cookie. Defaults to the `DEFAULT_COOKIE_AGE` environment variable, or 300.",
+                "{Boolean} Secure Whether or not this cookie should only be used on HTTPS. Defaults to the `DEFAULT_COOKIE_SECURE` environment variable, or true.",
+                "{Boolean} HttpOnly Whether or not this cookie can only be accessed by HTTP, not frontend `document.cookie`. Defaults to the `DEFAULT_COOKIE_HTTP` environment variable, or false."
+            ]
         }
     ],
     "Request": [
@@ -217,7 +254,7 @@
         {
             "Value": "Redirect",
             "Flags": [],
-            "Line": 127,
+            "Line": 138,
             "Description": "Redirects the user to another URL and ends this request.",
             "Params": [
                 "{String} Location A base URL or relative path to redirect to.",
@@ -228,7 +265,7 @@
         {
             "Value": "End",
             "Flags": [],
-            "Line": 138,
+            "Line": 149,
             "Description": "Marks this request as ended and sends it to the client.",
             "Params": [
                 "{Number} Code A HTTP status code.",

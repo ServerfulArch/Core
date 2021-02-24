@@ -50,7 +50,7 @@ The RequestManager is accessible through the Packet instance, using `Packet.Requ
 >
 > Returns **{RequestManager}** 
 
-## [Redirect](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L127)
+## [Redirect](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L138)
 > Redirects the user to another URL and ends this request.
 > | Key | Type | Description |
 > | --- | --- | --- |
@@ -59,7 +59,7 @@ The RequestManager is accessible through the Packet instance, using `Packet.Requ
 >
 > Returns **{Response}** 
 
-## [End](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L138)
+## [End](https://github.com/ServerfulArch/Core/blob/master/lib/Managers/Request.js#L149)
 > Marks this request as ended and sends it to the client.
 > | Key | Type | Description |
 > | --- | --- | --- |
