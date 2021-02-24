@@ -1,13 +1,10 @@
 
 # Serverful
-## The core Serverful library
-
-[[Contribute](#issues-contributing--license)] [[Documentation](https://github.com/ServerfulArch/Core/blob/master/Documentation/Index.md)]
 
 > An interface for creating HTTP servers, together with powerful features and extensions.
 
 
-# Main Features
+# Features
 * Effective and performant HTTP interface.
 * Shortcut behaviour, like gateways and redirects.
 * Optional integration of EJS templates.
@@ -20,7 +17,7 @@
 ## Extensions
 * [Public file server](https://github.com/ServerfulArch/Public)
 
-## Install/Import
+## Installation
 `npm install @serverful/core`
 ```js
 const Serverful = require("@serverful/core");
@@ -61,8 +58,5 @@ Packet.Request.Render(EJSTemplate, Document)
 Packet.Request.JSON(Document);
 ```
 
-
-# Issues, Contributing & License
-Before making an issue for a bug or feature submittion, please ensure that it hasn't already been created [on the repository](https://github.com/ServerfulArch/Core/issues).
 
 This module is licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0).
