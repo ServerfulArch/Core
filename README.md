@@ -9,6 +9,7 @@
 * Shortcut behaviour, like gateways and redirects.
 * Optional integration of EJS templates.
 * Native cookie parsing.
+* Rich extension management.
 
 ## Links
 * [Documentations](https://github.com/ServerfulArch/Core/blob/master/Documentation/Index.md)
