@@ -16,6 +16,7 @@
 
 ## Extensions
 * [Public file server](https://github.com/ServerfulArch/Public)
+* [View selector](https://github.com/ServerfulArch/Views)
 
 ## Installation
 `npm install @serverful/core`
