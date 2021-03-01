@@ -46,8 +46,9 @@ MyServer.Gateway("api", Handler);
 
 ## Requests
 ```js
+// Handler
 // Redirect the user relatively or absolute.
-Packet.Request.Redirect("/dashboard/");
+Packet.Request.Redirect("/dashboard/index");
 Packet.Request.Redirect("https://duckduckgo.com/");
 
 // Render an EJS template.
