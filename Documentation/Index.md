@@ -7,7 +7,7 @@
 const Serverful = require("@serverful/core");
 ```
 
-### Current implemented classes
+### Classes
 * [Server](https://github.com/ServerfulArch/Core/blob/master/Documentation/Server.md)
 
 **Requests**

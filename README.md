@@ -33,6 +33,11 @@ Creation of a Serverful instance.
 const MyServer = new Serverful(Port);
 ```
 
+Registration of Serverful extensions.
+```js
+Serverful.Extension(ServerfulExtension);
+```
+
 ## Gateways
 ```js
 // /**
