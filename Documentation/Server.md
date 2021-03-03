@@ -41,3 +41,11 @@ const MyServer = new Serverful(80);
 > | Handler | Function | A function which'll get executed by each of this gateway request. |
 >
 > Returns **{Server}** 
+
+## [.Extension(Plugin)](https://github.com/ServerfulArch/Core/blob/master/lib/Server.js#L112) [**Static**]
+> Extends the functionality of Serverful by installing a plugin.
+> | Key | Type | Description |
+> | --- | --- | --- |
+> | Plugin | ServerfulExtension | A Serverful extension. |
+>
+> Returns **{Any}** 

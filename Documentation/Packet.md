@@ -46,13 +46,16 @@ MyServer.Incoming(Packet => { ... });
 >
 > Returns **{Object|DataStore}** 
 
-## [.Body()](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L145)
-> Resolves and parses the request's body as JSON. Rejects the Promise if any error occurred, including parse errors.
+## [.Body(QueryEncoded?)](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L145)
+> Resolves and parses the request's body as JSON or URL-encoded string. Rejects the Promise if any error occurred, including parse errors.
+> | Key | Type | Description |
+> | --- | --- | --- |
+> | QueryEncoded? | Boolean | Whether to parse the body as query parameters. |
 >
 > Returns **{Promise<Object|Array>}** 
 
 # Typedefs
-## [CookieOptions](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L171)
+## [CookieOptions](https://github.com/ServerfulArch/Core/blob/master/lib/Structures/Packet.js#L179)
 > Additional options for a response cookie. 
 > | Key | Type | Description |
 > | --- | --- | --- |
