@@ -1,3 +1,19 @@
 
 GET http://localhost/
+Cache-Control: no-store
 Cookie: foo=bar; bar=foo
+
+###
+
+GET http://localhost/public
+Cache-Control: no-store
+
+###
+
+GET http://localhost/content
+Cache-Control: no-store
+
+###
+
+GET http://localhost/api
+Cache-Control: no-store
